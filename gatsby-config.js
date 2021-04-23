@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: "Gatsby Tailwind Starter",
-    siteUrl: "https://www.gatsbytailwind.com",
+    title: "Campesinx Womb Care",
+    siteUrl: "https://www.campesinxwombcare.com",
   },
   plugins: [
     "gatsby-plugin-sitemap",
@@ -13,7 +13,7 @@ module.exports = {
     {
       resolve: "gatsby-source-datocms",
       options: {
-        apiToken: "b5019e46a4caf253589f28c4d2d4d8",
+        apiToken: "43f6a861f086ee1580cfb1f1f5d72b",
       },
     },
     {

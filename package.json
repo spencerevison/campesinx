@@ -1,9 +1,9 @@
 {
-  "name": "gatsby-tailwind",
+  "name": "campesinx-womb-care",
   "version": "1.0.0",
   "private": true,
-  "description": "Gatsby Tailwind Starter",
-  "author": "Spencer Campbell",
+  "description": "Campesinx Womb Care",
+  "author": "Spencer Evison",
   "keywords": [
     "gatsby"
   ],

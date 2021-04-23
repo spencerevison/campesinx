@@ -17,15 +17,15 @@ module.exports = {
     extend: {
       colors: {
         primary: {
-          lighter: lighten(colors.primary, 0.5),
-          light: lighten(colors.primary, 0.25),
+          lighter: "#D68DB3",
+          light: "#B06288",
           DEFAULT: colors.primary,
           dark: darken(colors.primary, 0.25),
           darker: darken(colors.primary, 0.5),
         },
         secondary: {
-          lighter: lighten(colors.secondary, 0.5),
-          light: lighten(colors.secondary, 0.25),
+          lighter: "#F1E4FF",
+          light: "#E2BDFF",
           DEFAULT: colors.secondary,
           dark: darken(colors.secondary, 0.25),
           darker: darken(colors.secondary, 0.5),
@@ -38,8 +38,8 @@ module.exports = {
           darker: darken(colors.tertiary, 0.5),
         },
         quaternary: {
-          lighter: lighten(colors.quaternary, 0.5),
-          light: lighten(colors.quaternary, 0.25),
+          lighter: "#FCDFE3",
+          light: "#F4C1C7",
           DEFAULT: colors.quaternary,
           dark: darken(colors.quaternary, 0.25),
           darker: darken(colors.quaternary, 0.5),
@@ -59,6 +59,9 @@ module.exports = {
           xl: "5rem",
           "2xl": "6rem",
         },
+      },
+      gridTemplateRows: {
+        layout: "auto 1fr auto;",
       },
     },
   },

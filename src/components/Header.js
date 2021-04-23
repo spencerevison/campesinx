@@ -31,7 +31,7 @@ export default function Header() {
                   <Link
                     key={item.title}
                     to={item.path}
-                    className="text-gray-500 text-base font-medium"
+                    className="text-black text-base font-medium"
                   >
                     {item.title}
                   </Link>
