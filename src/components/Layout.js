@@ -6,7 +6,7 @@ import Footer from "./Footer";
 
 export default function Layout({ children, pageTitle }) {
   return (
-    <div className="grid-rows-layout grid min-h-screen">
+    <div className="grid grid-rows-layout min-h-screen">
       <Helmet htmlAttributes={{ lang: "en" }}>
         <title>{`${pageTitle} | ${site.title}`}</title>
         <meta name="description" content={site.description} />
