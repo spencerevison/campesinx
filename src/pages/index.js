@@ -2,11 +2,12 @@ import React from "react";
 import Layout from "components/Layout";
 import Img from "gatsby-image";
 import { graphql } from "gatsby";
+import Hero from "../components/Hero";
 
 const IndexPage = ({ data: { page } }) => {
   return (
     <Layout pageTitle="Home">
-      <Img className="w-full" alt="" fluid={page.heroImage.fluid} />
+      <Hero data={page} />
     </Layout>
   );
 };
