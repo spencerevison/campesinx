@@ -53,10 +53,16 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-plugin-google-fonts",
+      resolve: "gatsby-plugin-webfonts",
       options: {
-        fonts: ["Manrope:200,400,600,800"],
-        display: "swap",
+        fonts: {
+          google: [
+            {
+              family: "Manrope",
+              variants: ["200", "400", "600", "800"],
+            },
+          ],
+        },
       },
     },
   ],
