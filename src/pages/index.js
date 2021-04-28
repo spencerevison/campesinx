@@ -1,16 +1,13 @@
 import React from "react";
 import Layout from "components/Layout";
-import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
 import Hero from "../components/Hero";
-import site from "../site.config.json";
+import SEO from "../components/SEO";
 
 const IndexPage = ({ data: { page } }) => {
   return (
-    <Layout pageTitle="Home">
-      <Helmet htmlAttributes={{ lang: "en" }}>
-        <title>{`${site.title}`}</title>
-      </Helmet>
+    <Layout>
+      <SEO titleTemplate="Campesinx Womb Care" />
       <Hero data={page} />
     </Layout>
   );

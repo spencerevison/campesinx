@@ -2,10 +2,12 @@ import React from "react";
 import { graphql } from "gatsby";
 import Layout from "components/Layout";
 import Article from "components/Article";
+import SEO from "../components/SEO";
 
 const ResourcesPage = ({ data: { page } }) => {
   return (
-    <Layout pageTitle={page.title}>
+    <Layout>
+      <SEO title={page.title} />
       <Article page={page} />
     </Layout>
   );

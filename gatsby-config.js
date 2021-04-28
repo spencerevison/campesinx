@@ -1,7 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: "Campesinx Womb Care",
+    defaultTitle: "Campesinx Womb Care",
+    defaultTitleTemplate: "%s | Campesinx Womb Care",
+    defaultDescription: "Womb care kits for indigenous farmworker womxn.",
     siteUrl: "https://www.campesinxwombcare.com",
+    defaultImage: "/images/social.jpg",
   },
   plugins: [
     {
