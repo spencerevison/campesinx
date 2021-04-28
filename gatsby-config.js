@@ -4,12 +4,27 @@ module.exports = {
     siteUrl: "https://www.campesinxwombcare.com",
   },
   plugins: [
-    "gatsby-plugin-sitemap",
-    "gatsby-plugin-sharp",
-    "gatsby-plugin-react-helmet",
-    "gatsby-transformer-remark",
-    "gatsby-transformer-sharp",
-    "gatsby-plugin-postcss",
+    {
+      resolve: "gatsby-plugin-sitemap",
+    },
+    {
+      resolve: "gatsby-plugin-sharp",
+    },
+    {
+      resolve: "gatsby-plugin-image",
+    },
+    {
+      resolve: "gatsby-plugin-react-helmet",
+    },
+    {
+      resolve: "gatsby-transformer-remark",
+    },
+    {
+      resolve: "gatsby-transformer-sharp",
+    },
+    {
+      resolve: "gatsby-plugin-postcss",
+    },
     {
       resolve: "gatsby-source-datocms",
       options: {
@@ -22,6 +37,7 @@ module.exports = {
         aliases: {
           components: "src/components",
           pages: "src/pages",
+          images: "static/images",
           svg: "static/images/svg",
           "site.config.json": "src/site.config.json",
           styles: "src/styles",

@@ -14,4 +14,8 @@ strong, b {
   @apply font-extrabold;
 }
 
+.article {
+  @apply prose sm:py-16 lg:prose-lg xl:prose-xl mx-auto py-12 max-w-7xl;
+}
+
 

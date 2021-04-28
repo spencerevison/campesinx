@@ -58,6 +58,7 @@ module.exports = {
     config.resolve.alias = {
       "components": path.resolve(__dirname, "..", "src", "components"),
       "pages": path.resolve(__dirname, "..", "src", "pages"),
+      "images": path.resolve(__dirname, "..", "static", "images"),
       "svg": path.resolve(__dirname, "..", "static", "images", "svg"),
       "site.config.json": path.resolve(__dirname, "..", "src", "site.config.json"),
       "styles": path.resolve(__dirname, "..", "src", "styles"),

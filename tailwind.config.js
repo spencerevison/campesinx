@@ -1,3 +1,4 @@
+const defaultTheme = require("tailwindcss/defaultTheme");
 const Color = require("color");
 const lighten = (clr, val) => Color(clr).lighten(val).rgb().string();
 const darken = (clr, val) => Color(clr).darken(val).rgb().string();
@@ -11,6 +12,7 @@ const colors = {
 };
 
 module.exports = {
+  mode: "jit",
   purge: ["./src/**/*.js", "./public/page-data/**/*.json"],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -63,6 +65,64 @@ module.exports = {
       gridTemplateRows: {
         layout: "auto 1fr auto;",
       },
+      typography: {
+        DEFAULT: {
+          css: {
+            a: {
+              color: colors.primary,
+              "&:hover": {
+                color: darken(colors.primary, 0.25),
+              },
+            },
+            "a.button": {
+              color: "#FFF",
+              "text-decoration": "none",
+            },
+          },
+        },
+      },
+      height: {
+        "screen/2": "50vh",
+        "screen/3": "33.33vh",
+        "screen/4": "25vh",
+        "screen/5": "20vh",
+        120: "30rem",
+        140: "35rem",
+        160: "40rem",
+        200: "50rem",
+        280: "70rem",
+        360: "90rem",
+        480: "120rem",
+        "screen-nav-xs": "calc(100vh - 44px)",
+        "screen-nav-sm": "calc(100vh - 64px)",
+        "screen-nav-md": "calc(100vh - 75px)",
+      },
+      width: {
+        "screen/2": "50vw",
+        "screen/3": "33.33vw",
+        "screen/4": "25vw",
+        "screen/5": "20vw",
+        120: "30rem",
+        140: "35rem",
+        160: "40rem",
+        200: "50rem",
+        280: "70rem",
+        360: "90rem",
+        480: "120rem",
+      },
+      minHeight: {
+        120: "30rem",
+        140: "35rem",
+        160: "40rem",
+        200: "50rem",
+        280: "70rem",
+        360: "90rem",
+        480: "120rem",
+      },
+    },
+    screens: {
+      xs: "475px",
+      ...defaultTheme.screens,
     },
   },
   variants: {
