@@ -33,8 +33,8 @@ module.exports = {
           darker: darken(colors.secondary, 0.5),
         },
         tertiary: {
-          lighter: lighten(colors.tertiary, 0.5),
-          light: lighten(colors.tertiary, 0.25),
+          lighter: "#FCDFE3",
+          light: "#F4C1C7",
           DEFAULT: colors.tertiary,
           dark: darken(colors.tertiary, 0.25),
           darker: darken(colors.tertiary, 0.5),

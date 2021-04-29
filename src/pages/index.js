@@ -3,12 +3,14 @@ import Layout from "components/Layout";
 import { graphql } from "gatsby";
 import Hero from "../components/Hero";
 import SEO from "../components/SEO";
+import Stats from "../components/Stats";
 
 const IndexPage = ({ data: { page } }) => {
   return (
     <Layout>
       <SEO titleTemplate="Campesinx Womb Care" />
       <Hero data={page} />
+      <Stats />
     </Layout>
   );
 };
