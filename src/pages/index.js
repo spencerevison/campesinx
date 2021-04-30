@@ -45,7 +45,7 @@ export const query = graphql`
           placeholder: BLURRED
           imgixParams: {
             duotone: "88363B,F1E4FF"
-            duotoneAlpha: 60
+            duotoneAlpha: 40
             fit: "crop"
           }
         )

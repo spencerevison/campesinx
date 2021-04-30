@@ -119,6 +119,9 @@ module.exports = {
         360: "90rem",
         480: "120rem",
       },
+      borderWidth: {
+        16: "16px",
+      },
     },
     screens: {
       xs: "475px",

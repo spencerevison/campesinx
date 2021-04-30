@@ -18,4 +18,7 @@ strong, b {
   @apply prose sm:py-16 lg:prose-lg xl:prose-xl mx-auto py-12 max-w-7xl;
 }
 
+h2 {
+  @apply mb-4 text-4xl font-extrabold leading-tight lg:text-5xl lg:leading-tight;
+}
 

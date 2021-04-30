@@ -8,11 +8,9 @@ import {
 
 export default function Stats({ data }) {
   return (
-    <div className="container py-8 place-items-center auto-cols-auto lg:grid lg:gap-x-6 lg:grid-cols-2 lg:py-16">
+    <div className="container py-8 place-items-center auto-cols-auto lg:grid lg:gap-x-6 lg:grid-cols-2 lg:py-16 ">
       <div className="mb-10 text-center justify-self-start lg:mb-0 lg:max-w-lg lg:text-left">
-        <h2 className="mb-4 text-4xl font-extrabold leading-tight lg:text-5xl lg:leading-tight">
-          {data.statsHeading}
-        </h2>
+        <h2>{data.statsHeading}</h2>
         <p className="text-lg">{data.statsSubheading}</p>
       </div>
       <ul className="list-none ml-[calc(50%-100px)] sm:w-[520px] md:w-[580px] gap-x-6 gap-y-6 grid-cols-2 space-y-6 sm:grid sm:ml-auto sm:space-y-0 lg:mx-0 lg:w-auto">
