@@ -2,7 +2,12 @@ module.exports = {
   globals: {
     __PATH_PREFIX__: true,
   },
-  extends: ["react-app", "prettier", "plugin:prettier/recommended"],
+  extends: [
+    "react-app",
+    "prettier",
+    "plugin:prettier/recommended",
+    "plugin:tailwind/recommended",
+  ],
   plugins: ["react", "prettier"],
   rules: {
     "react/jsx-filename-extension": 0,
@@ -23,5 +28,6 @@ module.exports = {
     "no-multiple-empty-lines": 0,
     "import/no-anonymous-default-export": 0,
     "no-ignore": 0,
+    "tailwind/class-order": 1,
   },
 };

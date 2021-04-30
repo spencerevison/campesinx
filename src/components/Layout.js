@@ -4,7 +4,7 @@ import Footer from "./Footer";
 
 export default function Layout({ children }) {
   return (
-    <div className="grid grid-rows-layout min-h-screen">
+    <div className="min-h-screen grid grid-rows-layout">
       <Header />
       <main>{children}</main>
       <Footer />

@@ -1,4 +1,7 @@
 node_modules
+.idea
+.netlify
 .cache
 public
+static
 !.eslintrc.js

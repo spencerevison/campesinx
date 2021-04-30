@@ -20,8 +20,8 @@ export default function Header() {
                   <Logo className="w-auto h-full" />
                 </Link>
               </div>
-              <div className="-mr-2 -my-2 md:hidden">
-                <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 hover:text-gray-500 hover:bg-gray-100 bg-white rounded-md focus:outline-none focus:ring-primary focus:ring-2 focus:ring-inset">
+              <div className="-my-2 -mr-2 md:hidden">
+                <Popover.Button className="inline-flex items-center justify-center p-2 text-gray-400 bg-white hover:text-gray-500 hover:bg-gray-100 rounded-md focus:outline-none focus:ring-primary focus:ring-2 focus:ring-inset">
                   <span className="sr-only">Open menu</span>
                   <MenuIcon className="w-6 h-6" aria-hidden="true" />
                 </Popover.Button>
@@ -31,13 +31,13 @@ export default function Header() {
                   <Link
                     key={item.title}
                     to={item.path}
-                    className="text-black text-base font-medium"
+                    className="text-base font-medium text-black"
                   >
                     {item.title}
                   </Link>
                 ))}
               </Popover.Group>
-              <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
+              <div className="items-center justify-end hidden md:flex md:flex-1 lg:w-0">
                 <ButtonLink
                   to={site.cta.path}
                   label={site.cta.title}
