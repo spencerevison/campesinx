@@ -35,6 +35,8 @@
     "gatsby-plugin-sitemap": "^3.3.0",
     "gatsby-plugin-webfonts": "^2.1.0",
     "gatsby-source-datocms": "^2.6.13",
+    "gatsby-source-filesystem": "^3.4.0",
+    "gatsby-source-instagram": "^0.9.0",
     "gatsby-transformer-remark": "^4.1.0",
     "gatsby-transformer-sharp": "^3.4.0",
     "react": "^17.0.2",

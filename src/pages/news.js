@@ -3,12 +3,13 @@ import { graphql } from "gatsby";
 import Layout from "../components/Layout";
 import Article from "../components/Article";
 import SEO from "../components/SEO";
+import InstagramFeed from "../components/InstagramFeed";
 
-const NewsPage = ({ data: { page } }) => {
+const NewsPage = ({ data: { page, insta } }) => {
   return (
     <Layout>
       <SEO title={page.title} />
-      <Article page={page} />
+      <InstagramFeed posts={insta.nodes} />
     </Layout>
   );
 };
@@ -20,6 +21,23 @@ export const query = graphql`
     page: datoCmsStandardPage(slug: { eq: "news" }, title: {}) {
       title
       body
+    }
+    insta: allInstaNode {
+      nodes {
+        id
+        thumbnails {
+          src
+        }
+        caption
+        comments
+        likes
+        original
+        localFile {
+          childImageSharp {
+            gatsbyImageData(placeholder: BLURRED, aspectRatio: 1)
+          }
+        }
+      }
     }
   }
 `;

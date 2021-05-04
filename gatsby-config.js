@@ -6,6 +6,12 @@ module.exports = {
     siteUrl: "https://www.campesinxwombcare.com",
     defaultImage: "/images/social.jpg",
   },
+  flags: {
+    FAST_DEV: true,
+    PRESERVE_WEBPACK_CACHE: true,
+    PRESERVE_FILE_DOWNLOAD_CACHE: true,
+    PARALLEL_SOURCING: true,
+  },
   plugins: [
     {
       resolve: "gatsby-plugin-sitemap",
@@ -66,6 +72,12 @@ module.exports = {
             },
           ],
         },
+      },
+    },
+    {
+      resolve: "gatsby-source-instagram",
+      options: {
+        username: "39070380974",
       },
     },
   ],
