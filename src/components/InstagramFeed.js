@@ -1,7 +1,8 @@
 import React, { Component } from "react";
 
 export default class InstagramFeed extends Component {
-  componentDidMount = () => {
+  constructor() {
+    super();
     if (typeof document !== "undefined") {
       const script = document.createElement("script");
       script.src =
@@ -9,7 +10,7 @@ export default class InstagramFeed extends Component {
       script.async = true;
       document.body.appendChild(script);
     }
-  };
+  }
 
   render() {
     return (
