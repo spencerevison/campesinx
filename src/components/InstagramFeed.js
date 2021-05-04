@@ -1,19 +1,13 @@
 import React from "react";
 import { GatsbyImage } from "gatsby-plugin-image";
 
-export default function InstagramFeed({ posts }) {
+export default function InstagramFeed() {
+  const script = document.createElement("script");
+  script.src =
+    "https://cdn.curator.io/published/3249009b-30cf-433b-8602-3a96db0b4f3e.js";
+  script.async = true;
+  document.body.appendChild(script);
   return (
-    <div className="container">
-      {posts.map((post, i) => (
-        <a key={i} href={`https://www.instagram.com/p/${post.id}/`}>
-          <GatsbyImage
-            className=""
-            target="_blank"
-            alt=""
-            image={post.localFile.childImageSharp.gatsbyImageData}
-          />
-        </a>
-      ))}
-    </div>
+    <div className="container" id="curator-feed-campesinx-womb-care-layout" />
   );
 }

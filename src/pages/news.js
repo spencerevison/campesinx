@@ -5,11 +5,11 @@ import Article from "../components/Article";
 import SEO from "../components/SEO";
 import InstagramFeed from "../components/InstagramFeed";
 
-const NewsPage = ({ data: { page, insta } }) => {
+const NewsPage = ({ data: { page } }) => {
   return (
     <Layout>
       <SEO title={page.title} />
-      <InstagramFeed posts={insta.nodes} />
+      <InstagramFeed />
     </Layout>
   );
 };
@@ -21,23 +21,6 @@ export const query = graphql`
     page: datoCmsStandardPage(slug: { eq: "news" }, title: {}) {
       title
       body
-    }
-    insta: allInstaNode {
-      nodes {
-        id
-        thumbnails {
-          src
-        }
-        caption
-        comments
-        likes
-        original
-        localFile {
-          childImageSharp {
-            gatsbyImageData(placeholder: BLURRED)
-          }
-        }
-      }
     }
   }
 `;
