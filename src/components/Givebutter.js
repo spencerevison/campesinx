@@ -29,7 +29,7 @@ export default class Givebutter extends Component {
           src="https://givebutter.com/embed/c/SazYKE"
           width="100%"
           height="615px"
-          className="mx-auto max-w-[601px]"
+          className="relative z-10 mx-auto max-w-[601px]"
           name="givebutter"
           frameBorder="0"
           scrolling="no"

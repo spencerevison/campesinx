@@ -37,7 +37,7 @@ export default function ContactForm() {
             <form
               name="contact"
               method="post"
-              action="/thanks/"
+              action="/thank-you"
               data-netlify="true"
               data-netlify-honeypot="bot-field"
               onSubmit={handleSubmit}
@@ -59,7 +59,9 @@ export default function ContactForm() {
                     type="text"
                     id="name"
                     name="name"
+                    required
                     className="w-full px-3 py-1 text-base text-gray-700 bg-gray-100 border border-gray-300 rounded outline-none bg-opacity-50 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 leading-8 transition-colors duration-200 ease-in-out"
+                    onChange={handleChange}
                   />
                 </div>
               </div>
@@ -72,7 +74,9 @@ export default function ContactForm() {
                     type="email"
                     id="email"
                     name="email"
+                    required
                     className="w-full px-3 py-1 text-base text-gray-700 bg-gray-100 border border-gray-300 rounded outline-none bg-opacity-50 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 leading-8 transition-colors duration-200 ease-in-out"
+                    onChange={handleChange}
                   />
                 </div>
               </div>
@@ -85,6 +89,7 @@ export default function ContactForm() {
                     id="message"
                     name="message"
                     className="w-full h-32 px-3 py-1 text-base text-gray-700 bg-gray-100 border border-gray-300 rounded outline-none resize-none bg-opacity-50 focus:border-indigo-500 focus:bg-white focus:ring-2 focus:ring-indigo-200 leading-6 transition-colors duration-200 ease-in-out"
+                    onChange={handleChange}
                   />
                 </div>
               </div>
