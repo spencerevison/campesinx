@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Spinner from "./Spinner";
 
 export default class InstagramFeed extends Component {
   constructor() {
@@ -15,7 +16,9 @@ export default class InstagramFeed extends Component {
   render() {
     return (
       <div className="container">
-        <div id="curator-feed-campesinx-womb-care-layout" />
+        <div id="curator-feed-campesinx-womb-care-layout">
+          <Spinner />
+        </div>
       </div>
     );
   }

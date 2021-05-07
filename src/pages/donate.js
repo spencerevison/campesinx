@@ -9,8 +9,9 @@ const DonatePage = ({ data: { page } }) => {
   return (
     <Layout>
       <SEO title={page.title} />
-      <Article page={page} />
-      <Givebutter />
+      <Article page={page}>
+        <Givebutter />
+      </Article>
     </Layout>
   );
 };

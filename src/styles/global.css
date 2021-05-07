@@ -14,16 +14,24 @@ strong, b {
   @apply font-extrabold;
 }
 
+h2 {
+  @apply mb-4 text-4xl font-extrabold leading-tight lg:text-5xl lg:leading-tight;
+}
+
 .article {
   @apply prose sm:py-16 lg:prose-lg xl:prose-xl mx-auto py-12 max-w-none;
 }
 
-h1 {
-  text-align: center;
+.button {
+  @apply button inline-block items-center justify-center font-medium text-white border border-transparent bg-secondary-dark whitespace-nowrap rounded-md hover:bg-secondary-darker hover:text-white;
 }
 
-h2 {
-  @apply mb-4 text-4xl font-extrabold leading-tight lg:text-5xl lg:leading-tight;
+.button--primary {
+  @apply font-medium px-4 py-2;
+}
+
+.button--strong {
+  @apply font-bold px-5 py-3 lg:text-lg uppercase;
 }
 
 .crt-logo {
