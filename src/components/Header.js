@@ -26,7 +26,10 @@ export default function Header() {
                   <MenuIcon className="w-6 h-6" aria-hidden="true" />
                 </Popover.Button>
               </div>
-              <Popover.Group as="nav" className="hidden space-x-10 md:flex">
+              <Popover.Group
+                as="nav"
+                className="hidden space-x-6 lg:space-x-10 md:flex"
+              >
                 {site.nav.map((item) => (
                   <Link
                     key={item.title}
@@ -41,7 +44,7 @@ export default function Header() {
                 <ButtonLink
                   to={site.cta.path}
                   label={site.cta.title}
-                  className="inline-flex ml-8"
+                  className="inline-flex"
                 />
               </div>
             </div>

@@ -15,10 +15,25 @@ strong, b {
 }
 
 .article {
-  @apply prose sm:py-16 lg:prose-lg xl:prose-xl mx-auto py-12 max-w-7xl;
+  @apply prose sm:py-16 lg:prose-lg xl:prose-xl mx-auto py-12 max-w-none;
+}
+
+h1 {
+  text-align: center;
 }
 
 h2 {
   @apply mb-4 text-4xl font-extrabold leading-tight lg:text-5xl lg:leading-tight;
 }
 
+.crt-logo {
+  display: none !important;
+}
+
+.crt-post .crt-post-border {
+  border: none;
+}
+
+.crt-icon-instagram {
+  margin: auto;
+}

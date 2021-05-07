@@ -9,6 +9,7 @@ const NewsPage = ({ data: { page } }) => {
   return (
     <Layout>
       <SEO title={page.title} />
+      <Article page={page} />
       <InstagramFeed />
     </Layout>
   );

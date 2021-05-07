@@ -14,7 +14,9 @@ export default class InstagramFeed extends Component {
 
   render() {
     return (
-      <div className="container" id="curator-feed-campesinx-womb-care-layout" />
+      <div className="container">
+        <div id="curator-feed-campesinx-womb-care-layout" />
+      </div>
     );
   }
 }

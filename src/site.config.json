@@ -10,6 +10,10 @@
       "path": "/about"
     },
     {
+      "title": "Donate",
+      "path": "/donate"
+    },
+    {
       "title": "Resources",
       "path": "/resources"
     },
