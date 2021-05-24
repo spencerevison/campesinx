@@ -1,33 +1,33 @@
 {
-  "title": "Campesinx Womb Care",
-  "description": "Campesinx Womb Care",
-  "author": "Spencer Evison",
-  "baseurl": "https://www.campesinxwombcare.com",
-  "ogimage": "",
-  "nav": [
-    {
-      "title": "About",
-      "path": "/about"
-    },
-    {
-      "title": "Donate",
-      "path": "/donate"
-    },
-    {
-      "title": "Resources",
-      "path": "/resources"
-    },
-    {
-      "title": "News",
-      "path": "/news"
-    },
-    {
-      "title": "Contact",
-      "path": "/contact"
+    "title": "Campesinx Womb Care",
+    "description": "Campesinx Womb Care",
+    "author": "Spencer Evison",
+    "baseurl": "https://www.campesinxwombcare.com",
+    "ogimage": "",
+    "nav": [
+        {
+            "title": "About Us",
+            "path": "/about"
+        },
+        {
+            "title": "Donate",
+            "path": "/donate"
+        },
+        {
+            "title": "Resources",
+            "path": "/resources"
+        },
+        {
+            "title": "News",
+            "path": "/news"
+        },
+        {
+            "title": "Contact",
+            "path": "/contact"
+        }
+    ],
+    "cta": {
+        "title": "Donate",
+        "path": "/donate"
     }
-  ],
-  "cta": {
-    "title": "Donate",
-    "path": "/donate"
-  }
 }
