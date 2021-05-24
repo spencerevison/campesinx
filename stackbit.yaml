@@ -1,0 +1,48 @@
+stackbitVersion: ~0.3.0
+ssgName: gatsby
+nodeVersion: '12'
+publishDir: public
+dataDir: src
+models:
+  site_config:
+    type: data
+    label: Site Config
+    file: site.config.json
+    fields:
+      - type: string
+        name: title
+        label: Title
+      - type: string
+        name: description
+        label: Description
+      - type: string
+        name: author
+        label: Author
+      - type: string
+        name: baseurl
+        label: Baseurl
+      - type: string
+        name: ogimage
+        label: Ogimage
+      - type: list
+        name: nav
+        label: Nav
+        items:
+          type: object
+          fields:
+            - type: string
+              name: title
+              label: Title
+            - type: string
+              name: path
+              label: Path
+      - type: object
+        name: cta
+        label: Cta
+        fields:
+          - type: string
+            name: title
+            label: Title
+          - type: string
+            name: path
+            label: Path
